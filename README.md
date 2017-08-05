@@ -1,0 +1,1 @@
+# Synthetic_Data_Engine_For_Text_Recognition
