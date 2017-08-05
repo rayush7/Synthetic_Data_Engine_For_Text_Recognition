@@ -1,0 +1,7 @@
+Hi Max,
+
+Thank you for your interest in our work. We generated our font using the java Font class. You'll be able to randomly vary the weight, kerning etc, as font attributes. The characters are extracted randomly from the Brown corpus, and their adjacent characters are partially shown.
+
+After getting the basic characters which are binary images, we apply perspective transform to them. Then we blend it with natural images using a weighted sum. These image manipulations are done in matlab, which has an easy interface with java.
+
+Hope this helps, and let me know if you have other questions.
