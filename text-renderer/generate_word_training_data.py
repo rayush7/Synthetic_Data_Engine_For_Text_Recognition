@@ -20,17 +20,17 @@ SETTINGS = {
         'corpus_class': RandomCorpus,
         'corpus_args': {'min_length': 1, 'max_length': 10},
         'fontstate':{
-            'font_list': ["/home/ubuntu/Datasets/SVT/font_path_list.txt",
-                      "/home/ubuntu/Datasets/SVT/font_path_list.txt"],
+            'font_list': ["/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/font_path_list.txt",
+                      "/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/font_path_list.txt"],
             'random_caps': 1,  # the corpus is NOT case sensitive so train with all sorts of caps
         },
-        'trainingchars_fn': ["/home/ubuntu/Datasets/SVT/icdar_2003_train.txt",
-                             "/home/ubuntu/Datasets/SVT/icdar_2003_train.txt"],
+        'trainingchars_fn': ["/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/icdar_2003_train.txt",
+                             "/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/icdar_2003_train.txt"],
         'fillimstate': {
-            'data_dir': ["/home/ubuntu/Datasets/SVT/svt/svt1/img",
-                         "/home/ubuntu/Datasets/SVT/svt/svt1/img"],
-            'gtmat_fn': ["/home/ubuntu/Datasets/SVT/svt.txt",
-                         "/home/ubuntu/Datasets/SVT/svt.txt"],
+            'data_dir': ["/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/svt/svt1/img",
+                         "/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/svt/svt1/img"],
+            'gtmat_fn': ["/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/svt.txt",
+                         "/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/svt.txt"],
         }
     },
     #####################################
@@ -38,17 +38,17 @@ SETTINGS = {
         'corpus_class': RandomCorpus,
         'corpus_args': {'min_length': 1, 'max_length': 23},
         'fontstate':{
-            'font_list': ["/home/ubuntu/Datasets/SVT/font_path_list.txt",
-                      "/home/ubuntu/Datasets/SVT/font_path_list.txt"],
+            'font_list': ["/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/font_path_list.txt",
+                      "/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/font_path_list.txt"],
             'random_caps': 1,  # the corpus is NOT case sensitive so train with all sorts of caps
         },
-        'trainingchars_fn': ["/home/ubuntu/Datasets/SVT/icdar_2003_train.txt",
-                             "/home/ubuntu/Datasets/SVT/icdar_2003_train.txt"],
+        'trainingchars_fn': ["/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/icdar_2003_train.txt",
+                             "/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/icdar_2003_train.txt"],
         'fillimstate': {
-            'data_dir': ["/home/ubuntu/Datasets/SVT/svt/svt1/img",
-                         "/home/ubuntu/Datasets/SVT/svt/svt1/img"],
-            'gtmat_fn': ["/home/ubuntu/Datasets/SVT/svt.txt",
-                         "/home/ubuntu/Datasets/SVT/svt.txt"],
+            'data_dir': ["/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/svt/svt1/img",
+                         "/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/svt/svt1/img"],
+            'gtmat_fn': ["/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/svt.txt",
+                         "/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/SVT/svt.txt"],
         }
     },
 }
@@ -255,17 +255,17 @@ def create_synthetic_data(lmdb_path,imfolder_path,dataset,NUM_TO_GENERATE):
     print 'Creating LMDB Dataset'
     createDataset(lmdb_path, im_list, label_list, lexiconList=None, checkValid=True)
 
-    print 'Finished creating LMDB Datasets'
+    print 'Finished creating LMDB Synthetic_Data_Engine_For_Text_Recognition'
 
 def main():
 
 	#Image Folder Path
-	train_im_folder_path='/home/ubuntu/Datasets/text-renderer/vgg_synthetic_custom_train/'
-	val_im_folder_path='/home/ubuntu/Datasets/text-renderer/vgg_synthetic_custom_val/'
+	train_im_folder_path='/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/text-renderer/vgg_synthetic_custom_train/'
+	val_im_folder_path='/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/text-renderer/vgg_synthetic_custom_val/'
 
 	#Setting LMDB Folder Path
-	train_lmdb_path='/home/ubuntu/Datasets/text-renderer/synth90k_custom_train_lmdb'
-	val_lmdb_path='/home/ubuntu/Datasets/text-renderer/synth90k_custom_val_lmdb'
+	train_lmdb_path='/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/text-renderer/synth90k_custom_train_lmdb'
+	val_lmdb_path='/home/ubuntu/Synthetic_Data_Engine_For_Text_Recognition/text-renderer/synth90k_custom_val_lmdb'
 
 	#Number of Training and Val Images to Generate
 	NUM_TO_GENERATE_TRAIN = 250000
