@@ -1,6 +1,6 @@
  # Synthetic_Data_Engine_For_Text_Recognition 
 
-This repository contains code for Max Jaderberg's Text Renderer (https://arxiv.org/pdf/1406.2227.pdf) for generating synthetic cropped text images which can be used to train text recognition models like CRNN (https://arxiv.org/pdf/1507.05717.pdf)
+This repository contains code for Max Jaderberg's Text Renderer (https://arxiv.org/pdf/1406.2227.pdf) for generating synthetic cropped text images which can be used to train text recognition models like CRNN (https://arxiv.org/pdf/1507.05717.pdf) (https://github.com/bgshih/crnn)
 
 ### Dependencies(Successfully tested on Ubuntu 14.04 LTS)
 * Anaconda Python 2.7
