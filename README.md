@@ -3,13 +3,13 @@
 This repository contains code for Max Jaderberg's Text Renderer (https://arxiv.org/pdf/1406.2227.pdf) for generating synthetic cropped text images which can be used to train text recognition models like CRNN (https://arxiv.org/pdf/1507.05717.pdf) (https://github.com/bgshih/crnn)
 
 ### Dependencies(Successfully tested on Ubuntu 14.04 LTS)
-* Anaconda Python 2.7
+* Anaconda Python 2.7  
   https://www.continuum.io/downloads
   
-* Opencv 3.1
-   conda install -c menpo opencv3=3.1.0
+* Opencv 3.1  
+  conda install -c menpo opencv3=3.1.0
 
-* Pygame
+* Pygame  
   conda install -c cogsci pygame 
   
 * LMDB  
