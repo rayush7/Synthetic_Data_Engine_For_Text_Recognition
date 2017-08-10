@@ -24,4 +24,4 @@ This repository contains code for Max Jaderberg's Text Renderer (https://arxiv.o
 * cd Synthetic_Data_Engine_For_Text_Recognition/text_renderer/
 * python generate_word_training_data.py (This code would generate the images and the lmdb files for training text recognition models like CRNN)
 
-## Examples
+### Examples
